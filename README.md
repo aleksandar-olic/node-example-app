@@ -1,4 +1,4 @@
-node-example-app
+# node-example-app
 ================
 
-Node.js example app
+Node.js example app for the tutorial
