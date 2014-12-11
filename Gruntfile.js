@@ -24,53 +24,53 @@ module.exports = function(grunt) {
         files: 'scripts/built.js',
         tasks: ['uglify'],
         options: {
-        livereload: true
+          livereload: true
         }
       },
       all: {
-            files: ['**/*.html'],
-            options: {
-      livereload: true
+        files: ['**/*.html'],
+        options: {
+          livereload: true
         }
       }
-  },
+    },
 
-  concat: {
+    concat: {
       options: {
-        separator: '\n/*next file*/\n\n',
+        separator: '\n/*next file*/\n\n'
       },
       dist: {
         src: ['scripts/coffee.js', 'scripts/main.js'],
-        dest: 'scripts/built.js',
-      },
+        dest: 'scripts/built.js'
+      }
     },
 
-  uglify: {
-    build: {
-      files: {
-        'scripts/built.min.js': ['scripts/built.js']
+    uglify: {
+      build: {
+        files: {
+          'scripts/built.min.js': ['scripts/built.js']
+        }
       }
-    }
-  },
+    },
 
-  coffee: {
-    compile: {
-     files: {
-       'scripts/coffee.js': 'scripts/coffee.coffee'
+    coffee: {
+      compile: {
+       files: {
+         'scripts/coffee.js': 'scripts/coffee.coffee'
+       }
      }
-   }
- },
+   },
 
-  cssmin: {
+   cssmin: {
     build: {
       src: 'styles/main.css',
       dest: 'styles/main.min.css'
     }
   },
 
- sass: {
-  dev: {
-    files: {
+  sass: {
+    dev: {
+      files: {
                 // destination         // source file
                 "styles/main.css" : "styles/main.scss"
               }
