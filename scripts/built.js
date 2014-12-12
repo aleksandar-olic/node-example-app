@@ -9,6 +9,8 @@
     return square(x) * x;
   };
 
+  alert("heeie");
+
 }).call(this);
 
 /*next file*/

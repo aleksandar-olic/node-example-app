@@ -2,8 +2,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-    // Watches for changes and runs tasks
-    // Livereload is setup for the 35729 port by default
     watch: {
       sass: {
         files: '**/*.scss',
@@ -72,7 +70,7 @@ module.exports = function(grunt) {
     dev: {
       files: {
                 // destination         // source file
-                "styles/main.css" : "styles/main.scss"
+                'styles/main.css': 'styles/main.scss'
               }
             }
           }
