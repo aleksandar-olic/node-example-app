@@ -1,3 +1,3 @@
 square = (x) -> x * x
 cube   = (x) -> square(x) * x
-alert("heeie")
+alert("hi there")

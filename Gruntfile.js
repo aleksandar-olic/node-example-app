@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         tasks: ['coffee']
       },
       concat: {
-        files: ['scripts/coffee.js','scripts/main.js'],
+        files: ['scripts/hello.js','scripts/main.js'],
         tasks: ['concat']
       },
       uglify: {
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         separator: '\n/*next file*/\n\n'
       },
       dist: {
-        src: ['scripts/coffee.js', 'scripts/main.js'],
+        src: ['scripts/hello.js', 'scripts/main.js'],
         dest: 'scripts/built.js'
       }
     },
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
     coffee: {
       compile: {
        files: {
-         'scripts/coffee.js': 'scripts/coffee.coffee'
+         'scripts/hello.js': 'scripts/hello.coffee'
        }
      }
    },
@@ -69,12 +69,11 @@ module.exports = function(grunt) {
   sass: {
     dev: {
       files: {
-                // destination         // source file
-                'styles/main.css': 'styles/main.scss'
+         // destination     // source file
+        'styles/main.css': 'styles/main.scss'
               }
             }
           }
-
         });
 
   // Default task

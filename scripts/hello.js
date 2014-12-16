@@ -9,6 +9,6 @@
     return square(x) * x;
   };
 
-  alert("heeie");
+  alert("hi there");
 
 }).call(this);
