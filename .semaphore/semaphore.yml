@@ -1,11 +1,11 @@
 version: v1.0
-name: Test MyApp
+name: Nodejs-Grunjs-Pipeline
 agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Nmd Install
+  - name: Install Nodejs
     task:
       jobs:
         - name: Test
@@ -17,3 +17,8 @@ blocks:
             - cache store
             - npm run build --if-present
             - npm test
+  - name: 'Block #2'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands: []
